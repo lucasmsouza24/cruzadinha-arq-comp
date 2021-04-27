@@ -11,6 +11,27 @@ h1 {
     margin-bottom: 60px;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: red; */
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+.score-label {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 300px;
+    height: 30px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
 .container {
     width: 80%;
     margin-left: auto;
@@ -87,6 +108,7 @@ h1 {
     margin-left: 3%;
     display: inline-block;
     text-align: center;
+    vertical-align: top;
 }
 
 .square {
@@ -94,6 +116,10 @@ h1 {
     height: 20px;
     color: white;
 }
+.square:hover {
+    opacity: 0.5;
+}
+
 .border-on {
     border: 1px solid white;
 }
@@ -110,5 +136,11 @@ h1 {
 }
 .wrong-answer-box {
     border-bottom: 2px solid #E43D40;
+}
+.sq-gray {
+    background-color: rgb(65, 65, 65);
+}
+.bg-green {
+    background-color: #81B622;
 }
 /* fim tabela de palavras */
