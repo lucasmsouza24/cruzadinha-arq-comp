@@ -15,17 +15,20 @@ h1 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    /* background-color: blue; */
 }
 /* fim geral */
 
 /* inicio questões */
 
-.question-section {
+#question-section {
     /* background-color: rgb(67, 67, 201); */
-    width: 650px;
+    width: 45%;
     height: 500px;
     padding: 20px;
     overflow: auto;
+    /* float: left; */
+    display: inline-block;
 }
 
 .question-box {
@@ -74,3 +77,38 @@ h1 {
 }
 
 /* fim questões */
+
+/* início tabela de palavras */
+
+#words-table {
+    /* background-color: white; */
+    width: 45%;
+    height: 500px;
+    margin-left: 3%;
+    display: inline-block;
+    text-align: center;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.border-on {
+    border: 1px solid white;
+}
+.green {
+    color: #81B622;
+}
+.sq-green {
+    color: #81B622;
+    border: 1px solid #81B622;
+
+}
+.correct-answer-box {
+    border-bottom: 2px solid #81B622;
+}
+.wrong-answer-box {
+    border-bottom: 2px solid #E43D40;
+}
+/* fim tabela de palavras */
