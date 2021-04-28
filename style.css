@@ -60,7 +60,10 @@ footer {
     border-bottom: 2px solid #145DA0;
     margin-bottom: 50px;
 }
-
+.no-margin {
+    margin: 0px;
+    padding: 0px;
+}
 .question-box:hover {
     opacity: 1;
 }
@@ -119,7 +122,6 @@ footer {
 .square:hover {
     opacity: 0.5;
 }
-
 .border-on {
     border: 1px solid white;
 }
@@ -129,7 +131,6 @@ footer {
 .sq-green {
     color: #81B622;
     border: 1px solid #81B622;
-
 }
 .correct-answer-box {
     border-bottom: 2px solid #81B622;
@@ -144,3 +145,28 @@ footer {
     background-color: #81B622;
 }
 /* fim tabela de palavras */
+
+/* fade out */
+
+.hide {
+    animation-name:fadeOut;
+    animation-duration:0.8s;
+    animation-fill-mode: forwards; /* added */
+    visibility: hidden;
+    /* display: none; */
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        margin-left: 0%;
+    }
+
+    to {
+        opacity: 0;
+        margin-left: -100%;
+        height: 0; /* added */
+    }
+}
+
+/* fade out */

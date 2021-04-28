@@ -38,7 +38,7 @@
 
             <!-- inicio questão 3 -->
             <div id="idQuestionBox3" class="question-box">
-                <p>3) Dentro da CPU, atua como memória de mais alta hierarquia.</p>
+                <p>3) Dentro da CPU, atuam como memória de mais alta hierarquia.</p>
 
                 <input id="inputQuestion3" type="text" class="input-answer" placeholder="Resposta"> <br>
 
@@ -722,6 +722,11 @@
             atualizarScore();
     }
 
+    function removeQuestionBox(n) {
+        let box = document.querySelector("#idQuestionBox" + n);
+        box.setAttribute("class", "question-box no-margin hide");
+    }
+
     atualizarScore();
 
     // questão 1
@@ -742,6 +747,7 @@
 
             // atualizando score
             addPonto(0);
+            removeQuestionBox(1);
         } else {
             meioPonto = true;
             idQuestionBox1.setAttribute("class", "question-box wrong-answer-box");
@@ -766,6 +772,7 @@
 
             // atualizando score
             addPonto(1);
+            removeQuestionBox(2);
         } else {
             meioPonto = true;
             idQuestionBox2.setAttribute("class", "question-box wrong-answer-box");
@@ -810,6 +817,7 @@
 
             // atualizando score
             addPonto(2);
+            removeQuestionBox(3);
         } else {
             meioPonto = true;
             idQuestionBox3.setAttribute("class", "question-box wrong-answer-box");
@@ -833,13 +841,8 @@
             idQuestionBox4.setAttribute("class", "question-box correct-answer-box");
 
             // atualizando score
-            if (meioPonto) {
-                score[3] = 62.5 / 2;
-                meioPonto = false;
-            } else {
-                score[3] = 62.5;
-            }
-            atualizarScore();
+            addPonto(3);
+            removeQuestionBox(4);
         } else {
             meioPonto = true;
             idQuestionBox4.setAttribute("class", "question-box wrong-answer-box");
@@ -863,6 +866,7 @@
 
             // atualizando score
             addPonto(4);
+            removeQuestionBox(5);
         } else {
             meioPonto = true;
             idQuestionBox5.setAttribute("class", "question-box wrong-answer-box");
@@ -890,6 +894,7 @@
 
             // atualizando score
             addPonto(5);
+            removeQuestionBox(6);
         } else {
             meioPonto = true;
             idQuestionBox6.setAttribute("class", "question-box wrong-answer-box");
@@ -918,6 +923,7 @@
 
             // atualizando score
             addPonto(6);
+            removeQuestionBox(7);
         } else {
             meioPonto = true;
             idQuestionBox7.setAttribute("class", "question-box wrong-answer-box");
@@ -968,6 +974,7 @@
 
             // atualizando score
             addPonto(7);
+            removeQuestionBox(8);
         } else {
             meioPonto = true;
             idQuestionBox8.setAttribute("class", "question-box wrong-answer-box");
@@ -992,6 +999,7 @@
 
             // atualizando score
             addPonto(8);
+            removeQuestionBox(9);
         } else {
             meioPonto = true;
             idQuestionBox9.setAttribute("class", "question-box wrong-answer-box");
@@ -1013,6 +1021,7 @@
             idQuestionBox10.setAttribute("class", "question-box correct-answer-box");
             // atualizando score
             addPonto(9);
+            removeQuestionBox(10);
         } else {
             meioPonto = true;
             idQuestionBox10.setAttribute("class", "question-box wrong-answer-box");
@@ -1051,6 +1060,7 @@
             idQuestionBox11.setAttribute("class", "question-box correct-answer-box");
             // atualizando score
             addPonto(10);
+            removeQuestionBox(11);
         } else {
             meioPonto = true;
             idQuestionBox11.setAttribute("class", "question-box wrong-answer-box");
@@ -1084,6 +1094,7 @@
 
             // atualizando score
             addPonto(11);
+            removeQuestionBox(12);
         } else {
             meioPonto = true;
             idQuestionBox12.setAttribute("class", "question-box wrong-answer-box");
@@ -1107,6 +1118,7 @@
 
             // atualizando score
             addPonto(12);
+            removeQuestionBox(13);
         } else {
             meioPonto = true;
             idQuestionBox13.setAttribute("class", "question-box wrong-answer-box");
@@ -1130,6 +1142,7 @@
 
             // atualizando score
             addPonto(13);
+            removeQuestionBox(14);
         } else {
             meioPonto = true;
             idQuestionBox14.setAttribute("class", "question-box wrong-answer-box");
@@ -1168,6 +1181,7 @@
 
             // atualizando score
             addPonto(14);
+            removeQuestionBox(15);
         } else {
             meioPonto = true;
             idQuestionBox15.setAttribute("class", "question-box wrong-answer-box");
@@ -1205,6 +1219,7 @@
 
             // atualizando score
             addPonto(15);
+            removeQuestionBox(16);
         } else {
             meioPonto = true;
             idQuestionBox16.setAttribute("class", "question-box wrong-answer-box");
